@@ -25,11 +25,11 @@ struct ContentView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItem{
-                    Image(systemName: "bell.badge")
-                        .symbolRenderingMode(.palette)
-                        .foregroundStyle(Color.icon,.primary)
-                    
-                    
+                    NavigationLink(destination: Text("No notifications.")) {
+                        Image(systemName: "bell.badge")
+                            .symbolRenderingMode(.palette)
+                            .foregroundStyle(Color.icon,.primary)
+                    }
                 }
             }
         }
